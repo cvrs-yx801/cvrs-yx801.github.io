@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ffffff">
+  <title>Research &middot; CVRS Lab</title>
+  <meta name="description"
+    content="Computer Vision and Remote Sensing Lab at Shenyang Jianzhu University. Explore ApDepth-G and ApDepth, paper abstracts and visual results.">
+  <link rel="canonical" href="https://cvrs-yx801.github.io/research.html">
+  <meta property="og:title" content="Research &middot; CVRS Lab">
+  <meta property="og:description" content="Computer Vision and Remote Sensing Lab at Shenyang Jianzhu University.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cvrs-yx801.github.io/research.html">
+  <meta property="og:image" content="https://cvrs-yx801.github.io/assets/logo-801-1610.png">
+  <link rel="icon" type="image/png" href="assets/logo-801-v3.png">
+  <script src="assets/theme.js"></script>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/research.css">
+  <script src="assets/main.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="CVRS Lab home"><img src="assets/logo-801-1610.png" width="1200"
+          height="750" alt="CVRS"></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="team.html">Team</a>
+        <a href="research.html" aria-current="page">Research</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="theme-control" hidden><button class="theme-toggle" type="button" aria-label="Switch to dark mode"
+          title="Switch to dark mode"><span class="theme-icon" aria-hidden="true">&#9790;</span></button></div>
+    </div>
+  </header>
+  <main class="container research-page" id="main">
+    <section aria-labelledby="research-title">
+      <header class="page-heading">
+        <h1 id="research-title">Research</h1>
+        <p>Our research in depth estimation</p>
+      </header>
+
+      <article class="journal-article" id="apdepth-g" aria-labelledby="apdepth-g-title">
+        <h2 id="apdepth-g-title"><a href="https://haruko386.github.io/ApDepth-G/" target="_blank" rel="noopener noreferrer">ApDepth-G:
+          Multi-Step Geometric Diffusion Refinement for Robust Monocular Depth Estimation</a></h2>
+        <div class="article-body">
+          <aside class="article-info" aria-labelledby="apdepth-g-info">
+            <h3 class="article-section-title" id="apdepth-g-info">Article info</h3>
+            <dl>
+              <dt>Authors</dt>
+              <dd>
+                <ul>
+                  <li>Jiawei Wang</li>
+                  <li>Mingbo Lei</li>
+                  <li>Haoze Shou</li>
+                  <li>Yusu Liang</li>
+                  <li>Jingxuan Wang</li>
+                </ul>
+              </dd>
+              <dt>Keywords</dt>
+              <dd>
+                <ul>
+                  <li>Diffusion Model</li>
+                  <li>Monocular Depth Estimation</li>
+                  <li>Sky Collapse</li>
+                  <li>Depth Refinement</li>
+                  <li>Geometric Diffusion</li>
+                </ul>
+              </dd>
+            </dl>
+            <p class="article-links">
+              <a href="https://haruko386.github.io/ApDepth-G/" target="_blank" rel="noopener noreferrer">Project</a> &middot;
+              <a href="https://haruko386.github.io/ApDepth-G/cas-sc-sample.pdf" target="_blank" rel="noopener noreferrer">Paper</a> &middot;
+              <a href="https://github.com/cvrs-yx801/ApDepth-G" target="_blank" rel="noopener noreferrer">Code</a>
+            </p>
+          </aside>
+          <section class="article-abstract" aria-labelledby="apdepth-g-abstract">
+            <h3 class="article-section-title" id="apdepth-g-abstract">Abstract</h3>
+            <p>Diffusion-based depth estimators can assign inconsistent, finite depth to sky regions and introduce false structures from cloud textures. ApDepth-G addresses this failure through progressive geometric refinement guided by an RGB image and a pretrained depth prior. Its multi-step denoising process repeatedly corrects the latent depth representation. Training combines offset-noise regularization, signal-to-noise-ratio-based loss weighting, and latent gradient consistency to stabilize optimization and preserve structural boundaries. Sky-aware refinement further suppresses unreliable responses in ambiguous regions. The abstract reports reduced sky-depth collapse in challenging outdoor scenes. The introduction positions this approach as a complement to ApDepth: single-step prediction emphasizes efficiency, while iterative refinement trades some speed for more opportunities to correct uncertain geometry.</p>
+            <p class="abstract-source">Condensed from the paper &middot;
+              <a href="https://haruko386.github.io/ApDepth-G/cas-sc-sample.pdf#page=1" target="_blank" rel="noopener noreferrer">Abstract &amp; Introduction, pp. 1&ndash;2</a>
+            </p>
+          </section>
+        </div>
+        <figure class="article-figure">
+          <a href="assets/research/apdepth-g-cover.png" target="_blank" rel="noopener"
+            aria-label="View ApDepth-G image at full resolution in a new tab">
+            <img src="assets/research/apdepth-g-cover.png" width="3660" height="1690"
+              fetchpriority="high" alt="RGB inputs above ApDepth-G depth predictions for food, a city skyline, and a graphics card.">
+          </a>
+          <figcaption>RGB inputs (top) and ApDepth-G depth predictions (bottom).</figcaption>
+        </figure>
+      </article>
+
+      <article class="journal-article" id="apdepth" aria-labelledby="apdepth-title">
+        <h2 id="apdepth-title"><a href="https://haruko386.github.io/research/" target="_blank" rel="noopener noreferrer">ApDepth:
+          Aiming for Precise Monocular Depth Estimation Based on Diffusion Models</a></h2>
+        <div class="article-body">
+          <aside class="article-info" aria-labelledby="apdepth-info">
+            <h3 class="article-section-title" id="apdepth-info">Article info</h3>
+            <dl>
+              <dt>Authors</dt>
+              <dd>
+                <ul>
+                  <li>Jiawei Wang</li>
+                  <li>Mingbo Lei</li>
+                  <li>Haoze Shou</li>
+                  <li>Yusu Liang</li>
+                  <li>Yibo Chen</li>
+                </ul>
+              </dd>
+              <dt>Keywords</dt>
+              <dd>
+                <ul>
+                  <li>Diffusion Models</li>
+                  <li>Monocular Depth Estimation</li>
+                  <li>Two-Stage Training</li>
+                  <li>Frequency-Domain Learning</li>
+                </ul>
+              </dd>
+            </dl>
+            <p class="article-links">
+              <a href="https://haruko386.github.io/research/" target="_blank" rel="noopener noreferrer">Project</a> &middot;
+              <a href="https://haruko386.github.io/research/cas-dc-sample.pdf" target="_blank" rel="noopener noreferrer">Paper</a> &middot;
+              <a href="https://github.com/cvrs-yx801/ApDepth" target="_blank" rel="noopener noreferrer">Code</a>
+            </p>
+          </aside>
+          <section class="article-abstract" aria-labelledby="apdepth-abstract">
+            <h3 class="article-section-title" id="apdepth-abstract">Abstract</h3>
+            <p>ApDepth is a single-step diffusion framework for monocular depth estimation that, in the paper's words, <q>enables fast inference while preserving fine-grained edge details</q>. It addresses the trade-off between the latency of iterative denoising and the loss of local boundaries in single-step prediction. A pretrained depth estimator supplies semantic priors and global structure. A coarse-to-fine, two-stage training process then restores detail: cosine-similarity feature alignment connects intermediate U-Net features with an auxiliary encoder, while an iteration-based loss schedule moves from latent MSE and pixel L<sub>1</sub> constraints to frequency-domain FFT supervision. The spatial losses establish global depth structure; the final frequency-based phase targets sharp edges. The paper reports competitive or improved benchmark performance while substantially accelerating inference.</p>
+            <p class="abstract-source">Condensed from the paper &middot;
+              <a href="https://haruko386.github.io/research/cas-dc-sample.pdf#page=1" target="_blank" rel="noopener noreferrer">Abstract, p. 1</a>
+            </p>
+          </section>
+        </div>
+        <figure class="article-figure">
+          <a href="assets/research/apdepth-cover.png" target="_blank" rel="noopener"
+            aria-label="View ApDepth image at full resolution in a new tab">
+            <img src="assets/research/apdepth-cover.png" width="2411" height="970"
+              loading="lazy" alt="RGB inputs, ApDepth predictions, and Marigold predictions in three rows. Yellow boxes indicate corresponding detail regions.">
+          </a>
+          <figcaption>Top to bottom: RGB inputs, ApDepth, and Marigold. Yellow boxes mark corresponding details.</figcaption>
+        </figure>
+      </article>
+    </section>
+  </main>
+  <footer class="site-footer container">
+    <p>&copy; <span class="footer-year">2024 - 2027</span> CVRS Lab &middot; Shenyang Jianzhu University</p>
+  </footer>
+</body>
+
+</html>

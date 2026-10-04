@@ -1,0 +1,171 @@
+/* Journal-style research entries; typography and colors inherit the site theme. */
+.journal-article {
+  scroll-margin-top: 24px;
+}
+
+.journal-article + .journal-article {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px dashed var(--muted);
+}
+
+.journal-article > h2 {
+  margin-bottom: 22px;
+  padding: 16px 20px;
+  border-left: 4px solid var(--accent);
+  background-color: var(--hover);
+  font-size: 23px;
+  line-height: 1.5;
+}
+
+.journal-article > h2 a {
+  text-decoration: none;
+}
+
+.journal-article > h2 a:hover {
+  text-decoration: underline;
+}
+
+.article-body {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  gap: 40px;
+  padding-top: 16px;
+  border-top: 1px solid var(--muted);
+}
+
+.article-section-title {
+  margin-bottom: 14px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid var(--line);
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.article-info {
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.article-info dl,
+.article-info dd,
+.article-info ul {
+  margin: 0;
+}
+
+.article-info ul {
+  padding: 0;
+  list-style: none;
+}
+
+.article-info dt {
+  margin-bottom: 3px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.article-info dd + dt {
+  margin-top: 16px;
+}
+
+.article-links {
+  margin-top: 18px;
+  line-height: 1.9;
+}
+
+.article-abstract > p {
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.article-abstract .abstract-source {
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.article-figure {
+  margin: 22px 0 0;
+  padding: 20px 0 14px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--muted);
+}
+
+.article-figure > a {
+  display: block;
+  cursor: zoom-in;
+}
+
+.article-figure img {
+  width: 100%;
+  height: auto;
+}
+
+.article-figure figcaption {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+@media (max-width: 760px) {
+  .article-body {
+    grid-template-columns: 155px minmax(0, 1fr);
+    gap: 26px;
+  }
+
+  .journal-article > h2 {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 560px) {
+  .journal-article > h2 {
+    padding: 12px 14px;
+    font-size: 19px;
+  }
+
+  .article-body {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .article-info dl {
+    display: grid;
+    grid-template-columns: 68px minmax(0, 1fr);
+    gap: 10px 14px;
+  }
+
+  .article-info dt,
+  .article-info dd + dt {
+    margin: 0;
+  }
+
+  .article-info li {
+    display: inline;
+  }
+
+  .article-info li:not(:last-child)::after {
+    content: ", ";
+  }
+
+  .article-links {
+    margin-top: 12px;
+  }
+
+  .article-abstract > p {
+    font-size: 14px;
+  }
+
+  .article-abstract .abstract-source {
+    font-size: 12px;
+  }
+
+  .journal-article + .journal-article {
+    margin-top: 36px;
+    padding-top: 24px;
+  }
+}
