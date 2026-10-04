@@ -3,7 +3,6 @@
     <h4>Funded by the <b>Funded by EVOC Intelligent Technology Company</b></h4>
 </div>
 
-<div>
-    <img src="./assets/fund.png">
+<div align="center">
+    <img src="./assets/fund.png" style="width: 57%;">
 </div>
-
